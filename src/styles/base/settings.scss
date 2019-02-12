@@ -1,0 +1,53 @@
+//Colors
+$primary-color: #7451e9;
+$primary-color-boxhover: 0 6px 6px 0 rgba(0,0,0,0.26), 0 10px 20px 0 #00000030;
+$secondary-color: #063566;
+$secondary-color-hover: lighten($secondary-color, 20%);
+$tertiary-color: #78eea3;
+$tertiary-color-hover: lighten($tertiary-color, 20%);
+$neutral-color: #999999;
+$background-light: #ffffff;
+$background-dark: #f3f3f3;
+$background-opacity: rgba(95, 95, 95, 0.85);
+$button-color: #ffffff;
+$text-color: rgba(0, 0, 0, .92);
+
+//Font-size
+$font-xxs: 0.8rem;
+$font-xs: 1.2rem;
+$font-s: 1.4rem;
+$font-m: 1.6rem;
+$font-l: 2rem;
+$font-xl: 2.6rem;
+
+//Border-radius
+$br-xs: 0.2rem;
+$br-s: 0.4rem;
+$br-m: 0.6rem;
+$br-l: 0.8rem;
+$br-xl: 1rem;
+
+//Fonts
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+ }
+ @font-face {
+  font-family: "Montserrat Light";
+  src: url("../fonts/Montserrat-Light.ttf");
+ }
+ @font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
+ }
+ $font-family-primary: "Montserrat", sans-serif;
+ $font-family-bold: "Montserrat-Bold", sans-serif;
+
+//Spacing
+$margin-xxs: 0.7rem;
+$margin-xs: 1rem;
+$margin-s: 2rem;
+$margin-m: 3rem;
+$margin-l: 4rem;
+$margin-xl: 7rem;
+$margin-xxl: 10rem;

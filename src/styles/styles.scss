@@ -1,0 +1,24 @@
+//BASE
+@import "./base/settings.scss";
+@import "./base/base.scss";
+
+//UI COMPONENTS
+@import "./ui-components/instruction-objective.scss";
+@import "./ui-components/primary-button.scss";
+@import "./ui-components/secondary-button.scss";
+@import "./ui-components/side-bar.scss";
+@import "./ui-components/side-bar-page-title.scss";
+@import "./ui-components/radio-question.scss";
+@import "./ui-components/text-question.scss";
+@import "./ui-components/select-question.scss";
+@import "./ui-components/nav-buttons.scss";
+@import "./ui-components/big-progress-bar.scss";
+@import "./ui-components/need-card.scss";
+@import "./ui-components/zoom-need-card.scss";
+@import "./ui-components/play-card-video.scss";
+
+//PAGES
+@import "./pages/instructions-page.scss";
+@import "./pages/question-page.scss";
+@import "./pages/loading-page.scss";
+@import "./pages/results-page.scss";

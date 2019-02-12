@@ -1,0 +1,18 @@
+.primaryButton {
+  background-color: $primary-color;
+  color: $button-color;
+  &:hover {
+    box-shadow: $primary-color-boxhover;
+    -webkit-box-shadow: $primary-color-boxhover;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryButton--disabled {
+  background-color: lighten($neutral-color, 20%);
+  color: $text-color;
+  border: 2px $text-color solid;
+  cursor: default;
+}

@@ -1,0 +1,34 @@
+.instructionsPage__background {
+  background-color: $background-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.instructionsPage__instructions {
+  border-radius: $br-m;
+  border: 2px $neutral-color solid;
+  padding: $margin-xs $margin-s;
+  background-color: $background-light;
+  max-width: 80%;
+  min-width: 40%;
+}
+
+.instructionsPage__instructions h3 {
+  margin-left: $margin-s;
+}
+
+.instructionsPage__cta {
+  margin-top: $margin-m;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.instructionsPage__legend {
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+}

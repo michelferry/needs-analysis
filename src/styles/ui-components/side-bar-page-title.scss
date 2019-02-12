@@ -1,0 +1,29 @@
+.SideBarPageTitle__Title {
+  font-size: $font-s;
+  text-decoration: none;
+  padding: $margin-xs 10%;
+  width: 80%;
+  margin: 0;
+}
+
+.SideBarPageTitle__Title--inactive {
+  color: $neutral-color;
+  cursor: default;
+}
+
+.SideBarPageTitle__Title--current {
+  background-color: $primary-color;
+  color: $button-color;
+  &:hover{
+    background-color: lighten($primary-color, 10%);
+  }
+}
+
+.SideBarPageTitle__Title--active {
+  color: $primary-color;
+  &:hover{
+    color: $button-color;
+    background-color: lighten($primary-color, 10%);
+  }
+}
+

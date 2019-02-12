@@ -1,0 +1,30 @@
+.sideBar__background {
+  position: fixed;
+  width: 20%;
+  min-height: 100vh;
+  background-color: $background-dark;
+  display: inline-block;
+}
+
+.sideBar__topContainer {
+  text-align: center;
+}
+
+.sideBar__background  h3{
+  margin: 0;
+  padding-top: $margin-s;
+}
+
+.sideBar__legend {
+  font-style: italic;
+}
+
+.sideBar__progressBar {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.sideBar__navLinks {
+  padding-top: $margin-m;
+  text-align: left;
+}

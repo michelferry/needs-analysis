@@ -1,0 +1,17 @@
+.QuestionPage__Content {
+  width: 80%;
+  margin-left: 20%;
+  display: inline-block;
+  min-height: 100vh;
+}
+
+.QuestionPage__Context {
+  font-size: $font-s;
+  font-weight: bold;
+  margin: $margin-l $margin-m 0 $margin-l;
+}
+
+.QuestionPage__Notabene {
+  font-style: italic;
+  margin: $margin-l $margin-xxl 0 15%;
+}

@@ -1,0 +1,48 @@
+/* GENERIC HTML TAGS */
+html {
+  font-size: 62.5%;
+  @media screen and (min-width: 901px) and (max-width: 1700px) {
+    font-size: 87.5%;
+  }
+  @media screen and (min-width: 1701px) {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: $font-family-primary;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: $font-family-bold;
+  font-size: $font-xl;
+  text-align: center;
+  margin: $margin-m 0 $margin-m 0;
+}
+
+h2 {
+  font-size: $font-l;
+  padding: $margin-s 0 $margin-s 0;
+  margin: 0 0 0 0;
+}
+
+h3 {
+  font-size: $font-m;
+}
+
+button {
+  border-radius: 6px;
+  border: 2px $primary-color solid;
+  padding: $margin-xs $margin-s;
+  margin: $margin-xs $margin-xs;
+  font-size: $font-s;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 300ms, border 300ms;
+  min-width: 13rem;
+}

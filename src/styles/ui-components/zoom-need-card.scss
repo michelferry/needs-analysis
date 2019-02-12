@@ -1,0 +1,75 @@
+.ZoomNeedCard__FullPage{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top:0;
+}
+
+.ZoomNeedCard__OpacityBackground{
+  background-color: $background-opacity;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+  top:0;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ZoomNeedCard__Card{
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  z-index: 3;
+  background-color: $background-light;
+  border-radius: 0.6rem;
+  border: 2px solid $neutral-color;
+}
+
+.ZoomNeedCard__Content {
+  margin: $margin-s $margin-s;
+  text-align: justify;
+}
+
+.ZoomNeedCard__Content a {
+  color: $primary-color;
+  text-decoration: underline;
+  &:hover{
+    color: lighten($primary-color,10%);
+  }
+}
+
+.ZoomNeedCard__Title {
+  width: 100%;
+  text-align: center;
+  font-size: $font-s;
+  margin: 0 0 $margin-xs 0;
+}
+
+.ZoomNeedCard__Icon{
+  width: 5em;
+  margin: 0 auto $margin-xs auto;
+  display: block;
+}
+
+.ZoomNeedCard__TextContent {
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  & li {
+    margin: $margin-xxs 0;
+  }
+}
+
+.ZoomNeedCard__BoldSentence {
+  font-weight: bold;
+}
+
+.ZoomNeedCard_TestimonyVideo {
+  position: absolute;
+  top: $margin-s;
+}

@@ -1,0 +1,18 @@
+.instructionObjective__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $margin-s 0;
+}
+
+.instructionObjective__icon {
+  width: 4rem;
+  display: inline-block;
+  margin-right: $margin-s;
+}
+
+.instructionObjective__text {
+  display: inline-block;
+  width: 25rem;
+  font-size: $font-xs;
+}
