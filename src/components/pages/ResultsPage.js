@@ -85,7 +85,7 @@ class ResultsPage extends React.Component {
         userNeeds.push(need);
       }
     }
-    userNeeds=["financing", "social_interactions", "onboarding"];
+    //userNeeds=["financing", "social_interactions", "onboarding"];
     return userNeeds;
   }
 
