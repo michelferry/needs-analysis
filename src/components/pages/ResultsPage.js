@@ -167,7 +167,7 @@ class ResultsPage extends React.Component {
         userNeeds.push(need);
       }
     }
-    userNeeds = ["financing", "social_interactions" ,"onboarding", "learning_confidence", "short_training_duration", "diploma", "get_a_job", "working_conditions", "learning_by_doing"]
+    //userNeeds = ["financing", "social_interactions" ,"onboarding", "learning_confidence", "short_training_duration", "diploma", "get_a_job", "working_conditions", "learning_by_doing"]
     return userNeeds;
   }
 
