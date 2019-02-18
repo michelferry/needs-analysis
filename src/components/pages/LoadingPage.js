@@ -17,7 +17,7 @@ class LoadingPage extends React.Component {
     return (
       <div className="LoadingPage__Container">
         <h1>Merci {this.firstname} !</h1>
-        <h2>Nous analysons votre profil d'apprenant...</h2>
+        <h2>Nous analysons vos besoins...</h2>
         <BigProgressBar nextPage={this.nextPage} />
       </div>
     );
