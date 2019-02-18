@@ -1,5 +1,6 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
+import FormHelperText from '@material-ui/core/FormHelperText';
 import {connect} from "react-redux";
 
 class TextQuestion extends React.Component {
@@ -63,8 +64,6 @@ class TextQuestion extends React.Component {
           label={this.props.label}
           value={this.props.answers[this.props.parent][this.props.name]}
           margin="normal"
-          error = {this.state.error}
-          helperText= {this.state.errorText}
           InputProps={{
             style: {fontSize: "1.4rem", width: 250, color: "rgba(0, 0, 0, .92)"} 
           }}
@@ -74,6 +73,10 @@ class TextQuestion extends React.Component {
           onBlur = {this.handleBlur}
           onChange = {this.handleChange}
         />
+        {this.state.error && <div className="TextQuestion__HelperText"><FormHelperText 
+        style={{fontSize: "1.2rem", color: "red"}}
+          >{this.state.errorText}
+        </FormHelperText></div>}
       </div>
     )
   }

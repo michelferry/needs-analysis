@@ -1,14 +1,13 @@
 .progress-bar{
-  position: relative;
   height: $font-l;
   width: 60%;
-  margin: auto;
+  margin: 0 auto;
   border-radius: 0.6rem;
-  border: 1px solid $primary-color;
+  border: 1px solid $button-color;
 }
 
 .filler{
-  background-color: $primary-color;
+  background-color: $button-color;
   height: 100%;
   border-radius: 0.4rem;
   max-width: 100%;

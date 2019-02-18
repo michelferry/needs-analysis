@@ -1,7 +1,10 @@
+.NeedCard__CardContainer {
+  display: inline-block;
+  margin: 0.4rem $margin-xs;
+}
+
 .NeedCard__Card{
   background-color: $background-light;
-  width: 25rem;
-  height: 11rem;
   border-radius: 0.4rem;
   border: 1px solid $neutral-color;
   cursor: pointer;
@@ -10,28 +13,58 @@
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: $margin-xs $margin-s;
-  box-shadow: $primary-color-boxhover;
-  -webkit-box-shadow: $primary-color-boxhover;
+  color: $primary-color;
+  cursor: pointer;
   &:hover{
     background-color: lighten($primary-color, 35%);
+    font-weight: bold;
+  }
+  transition: background-color 500ms, border 500ms, font-size 500ms, padding 500ms, min-height 500ms;
+}
+
+.NeedCard__Button{
+  background-color: transparent;
+  border-radius: 0.4rem;
+  border: 2px solid $button-color;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: $button-color;
+  cursor: pointer;
+  min-height: 3rem;
+  padding: $margin-xxs $margin-xxs $margin-xxs $margin-xs;
+  font-size: $font-xs;
+  &:hover{
+    background-color: lighten($primary-color, 10%);
+    font-weight: bold;
+  }
+  transition: background-color 500ms, border 500ms, font-size 500ms, padding 500ms, min-height 500ms;
+}
+
+.NeedCard__Card--checked {
+  color: $checked-color;
+  background-color: $checked-color-hover;
+  &:hover{
+    font-weight: bold;
+    background-color: $checked-color-hover;
   }
 }
 
-.NeedCard__Title {
-  width: 100%;
-  font-size: $font-xs;
-  margin: $margin-xxs $margin-xs;
+.NeedCard__IconContainer {
+  display: inline-block;
+  width: 4rem;
 }
 
 .NeedCard__Icon{
-  width: 4em;
-  margin: 0 0 $margin-xs 0;
+  width: 2rem;
+  margin: 0.2rem;
 }
 
-.NeedCard__CTA{
-  width:100%;
-  text-align: center;
-  color: $primary-color;
-  font-weight: bold;
+.NeedCard__Title {
+  max-width: 20rem;
+  display: inline-block;
+  margin: 0 $margin-xxs 0 0;
 }

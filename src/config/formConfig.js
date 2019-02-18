@@ -5,7 +5,7 @@ const pages = [
     title: "Regularité",
     name: "regularity",
     content: {
-      context1: "Lorsque vous prenez une bonne résolution (ex: s'inscrire à un club de gym, peindre plus régulièrement), à quel point ces facteurs peuvent vous aider à la tenir dans la durée ?",
+      context1: "Lorsque vous prenez une bonne résolution (ex: s'inscrire à un club de gym, peindre plus régulièrement), à quel point les facteurs suivants peuvent vous aider à la tenir dans la durée ?",
       radioQuestion1: {
         name: "friend",
         text: "a. Trouver un proche avec le même objectif qui m’accompagne dans cette résolution pour se motiver mutuellement:",
@@ -176,9 +176,8 @@ const pages = [
         text: "a. Idéalement, en combien de temps souhaiteriez-vous finir votre formation à venir ?",
         choices: [
           {label: "3 mois ou moins", value: "3 months or less", need: {name: "short_training_duration", score: 1}},
-          {label: "6 mois", value: "6 months", need: {name: "short_training_duration", score: 0.7}},
-          {label: "9 mois", value: "9 months", need: {name: "short_training_duration", score: 0.5}},
-          {label: "1 an", value: "1 year", need: {name: "short_training_duration", score: 0.3}},
+          {label: "6 à 9 mois", value: "6-9 months", need: {name: "short_training_duration", score: 0.7}},
+          {label: "1 an", value: "1 year", need: {name: "short_training_duration", score: 0.4}},
           {label: "2 ans ou plus", value: "2 years or more", need: {name: "short_training_duration", score: 0}},
           {label: "Peu importe", value: "does not matter", need: {name: "short_training_duration", score: 0}}
         ]
@@ -217,7 +216,7 @@ const pages = [
           {label: "Moins d'1 mois", value: "less than 1 month", need: {name: "get_a_job", score: 1}},
           {label: "1 à 3 mois", value: "1 to 3 months", need: {name: "get_a_job", score: 0.8}},
           {label: "3 à 6 mois", value: "3 to 6 months", need: {name: "get_a_job", score: 0.5}},
-          {label: "Plus de 6 mois", value: "more than 6 months", need: {name: "get_a_job", score: 0.3}},
+          {label: "Moins d'un an", value: "less than 1 year", need: {name: "get_a_job", score: 0.3}},
           {label: "Je ne souhaite pas changer de poste", value: "do not want to change job", need: {name: "get_a_job", score: 0}}
         ]
       },
@@ -283,7 +282,7 @@ const pages = [
       textQuestion3: {
         name: "email",
         label: "Email",
-        validation: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/,
+        validation: /^[\w.]+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/,
         validationHelper: "L'adresse email n'est pas valide"
       },
       textQuestion4: {
@@ -317,21 +316,8 @@ const pages = [
 
 const needs = [
   {
-    name: "social_interactions",
-    title: "Avoir des interactions sociales",
-    img: "social",
-    boldSentence: "Chez OpenClassrooms, nous sommes convaincus que les interactions sociales peuvent être un puissant accélérateur d’apprentissage.",
-    description: <div><p>Voici ce que nous avons mis en place pour maximiser ces interactions :</p>
-    <ul>
-      <li>Interactions en continu avec toute la communauté d’élèves OpenClassrooms</li>
-      <li>Accès au groupe privé Facebook des élèves ayant suivi ce parcours pour échanger conseils et retour d’expériences</li>
-      <li>Points hebdomadaires avec votre mentor attitré</li>
-    </ul></div>,
-    videoURL: "https://www.youtube.com/embed/HkdA6zr51C8"
-  },
-  {
     name: "financing",
-    title: "Vous faire financer ma formation",
+    title: "Vous faire financer votre formation",
     img: "financing",
     boldSentence: "De nombreux moyens existent pour financer nos formations.",
     description: <div><p>En voici quelques-un :</p>
@@ -369,32 +355,6 @@ const needs = [
     <p>Nous vous souhaitons de découvrir rapidement à quel point apprendre dans de bonnes conditions et avec de bonnes techniques peut être satisfaisant !</p></div>
   },
   {
-    name: "working_conditions",
-    title: "Avoir un cadre et un rythme de travail",
-    img: "working_conditions",
-    boldSentence: "Nous vous aidons à créer de bonnes habitudes de travail.",
-    description: <div><p>Si vous n’avez jamais expérimenté les formations en ligne, il est normal que vous ayez des doutes avant de vous lancer. Voici ce que nous avons mis en place pour vous aider :</p>
-    <ul>
-      <li>Dès le début, faites le point avec votre mentor dédié et écoutez ses conseils pour se créer son propre cadre de travail</li>
-      <li>Bénéficiez des retours d’expérience des alumni OpenClassrooms sur les bonnes pratiques et les pièges à éviter</li>
-      <li>Faites des points hebdomadaires avec votre mentor pour rythmer votre travail et suivre vos objectifs</li>
-    </ul>
-    <p>Au début, apprendre à distance peut sembler intimidant. Avec les bonnes habitudes, on prend rapidement goût à cette grande flexibilité.</p></div>
-  },
-  {
-    name: "learning_by_doing",
-    title: "Apprendre de manière active pour rester engagé(e)",
-    img: "learning_by_doing",
-    boldSentence: "Chez OpenClassrooms, nous sommes convaincus que l’on apprend bien mieux en faisant.",
-    description: <div><p>Voici comment nous l’avons décliné dans notre approche pédagogique :</p>
-    <ul>
-      <li>Seuls les projets sont nécessaires pour valider votre parcours</li>
-      <li>Nos cours ne sont là que pour vous aider à acquérir une connaissance / compétence qui vous sera utile pour mener à bien un de vos projets</li>
-      <li>Nous mettons un point d’honneur à rendre nos cours aussi variés et interactifs que possible</li>
-    </ul></div>,
-    videoURL: "https://www.youtube.com/embed/taGLim_yelo"
-  },
-  {
     name: "short_training_duration",
     title: "Finir rapidement votre formation",
     img: "training_duration",
@@ -424,11 +384,50 @@ const needs = [
     </ul>
     <p>A titre d’exemple, voici 3 annonces qui semblent correspondre à vos critères et auxquelles vous auriez pu postuler si vous aviez fini ce parcours :</p>
     <ul>
-      <li><a href="https://www.linkedin.com/jobs/view/1112633144/" target="_blank" rel="noopener noreferrer">HC Resources - Développeur PHP Symfony Zend - Lyon</a></li>
-      <li><a href="https://www.linkedin.com/jobs/view/1095387653/" target="_blank" rel="noopener noreferrer">Cojecom - Développeur PHP - Symfony - Villeurbanne</a></li>
-      <li><a href="https://www.linkedin.com/jobs/view/1102146319/" target="_blank" rel="noopener noreferrer">Groupagora - Développeur Backend PHP Symfony - Lyon</a></li>
+      <li><a href="https://www.linkedin.com/jobs/view/1072070965" target="_blank" rel="noopener noreferrer">Business & Decision - Chef de Projet Digital (H/F) - Lyon</a></li>
+      <li><a href="https://www.linkedin.com/jobs/view/1092006305/" target="_blank" rel="noopener noreferrer">Endesa - Chef de Projet Digital - Lyon</a></li>
+      <li><a href="https://www.linkedin.com/jobs/view/1103143837/" target="_blank" rel="noopener noreferrer">SQLI - Chef de Projet IT Agile H/F - Lyon</a></li>
     </ul></div>,
     videoURL: "https://www.youtube.com/embed/ExMmhLVxAD0"
+  },
+  {
+    name: "social_interactions",
+    title: "Avoir des interactions sociales",
+    img: "social",
+    boldSentence: "Chez OpenClassrooms, nous sommes convaincus que les interactions sociales peuvent être un puissant accélérateur d’apprentissage.",
+    description: <div><p>Voici ce que nous avons mis en place pour maximiser ces interactions :</p>
+    <ul>
+      <li>Interactions en continu avec toute la communauté d’élèves OpenClassrooms</li>
+      <li>Accès au groupe privé Facebook des élèves ayant suivi ce parcours pour échanger conseils et retour d’expériences</li>
+      <li>Points hebdomadaires avec votre mentor attitré</li>
+    </ul></div>,
+    videoURL: "https://www.youtube.com/embed/HkdA6zr51C8"
+  },
+  {
+    name: "working_conditions",
+    title: "Avoir un cadre et un rythme de travail",
+    img: "working_conditions",
+    boldSentence: "Nous vous aidons à créer de bonnes habitudes de travail.",
+    description: <div><p>Si vous n’avez jamais expérimenté les formations en ligne, il est normal que vous ayez des doutes avant de vous lancer. Voici ce que nous avons mis en place pour vous aider :</p>
+    <ul>
+      <li>Dès le début, faites le point avec votre mentor dédié et écoutez ses conseils pour se créer son propre cadre de travail</li>
+      <li>Bénéficiez des retours d’expérience des alumni OpenClassrooms sur les bonnes pratiques et les pièges à éviter</li>
+      <li>Faites des points hebdomadaires avec votre mentor pour rythmer votre travail et suivre vos objectifs</li>
+    </ul>
+    <p>Au début, apprendre à distance peut sembler intimidant. Avec les bonnes habitudes, on prend rapidement goût à cette grande flexibilité.</p></div>
+  },
+  {
+    name: "learning_by_doing",
+    title: "Apprendre de manière active pour rester engagé(e)",
+    img: "learning_by_doing",
+    boldSentence: "Chez OpenClassrooms, nous sommes convaincus que l’on apprend bien mieux en faisant.",
+    description: <div><p>Voici comment nous l’avons décliné dans notre approche pédagogique :</p>
+    <ul>
+      <li>Seuls les projets sont nécessaires pour valider votre parcours</li>
+      <li>Nos cours ne sont là que pour vous aider à acquérir une connaissance / compétence qui vous sera utile pour mener à bien un de vos projets</li>
+      <li>Nous mettons un point d’honneur à rendre nos cours aussi variés et interactifs que possible</li>
+    </ul></div>,
+    videoURL: "https://www.youtube.com/embed/taGLim_yelo"
   }
 ]
 
